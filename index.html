@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TenoCoin</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HOME ================= -->
+<div class="page active" id="home">
+
+  <div class="top-card">
+    <div class="user-info">
+      <img id="avatar" class="avatar">
+      <div>
+        <div id="username">User</div>
+        <div>ID: <span id="userId"></span></div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div>Balance: <span id="balance">0</span></div>
+      <div>Level: <span id="level">1</span></div>
+
+    </div>
+  </div>
+
+  <div class="coin-container">
+    <div class="coin" id="coin">$</div>
+  </div>
+        <h1>      </h1>
+        <h1>       </h1>
+        <div>Clicks: <span id="clicks">1000</span></div>
+
+</div>
+
+<!-- ================= SERVICES ================= -->
+<div class="page" id="services">
+  <h2>💰 Services</h2>
+  <p>Coming Soon...</p>
+</div>
+
+<!-- ================= FRIENDS ================= -->
+<div class="page" id="friends">
+  <h2>👥 Friends</h2>
+  <button id="shareBtn">Invite Friend</button>
+  <button id="copyBtn">Copy Bot Link</button>
+</div>
+
+<!-- ================= WORK ================= -->
+<div class="page" id="work">
+  <h2>⚡ Work</h2>
+  <button id="promoBtn">Enter Promo Code</button>
+
+  <div id="promoBox" class="promo-box">
+    <input type="text" id="promoInput" placeholder="Enter Code">
+    <button id="promoSubmit">Submit</button>
+  </div>
+</div>
+
+<!-- ================= PROFILE ================= -->
+<div class="page" id="profile">
+  <img id="profileAvatar" class="avatar large">
+  <h3 id="profileName">User</h3>
+  <p>ID: <span id="profileId"></span></p>
+</div>
+
+<!-- ================= NAV ================= -->
+<div class="nav">
+  <div class="tab active" data-page="home">🪙 Home</div>
+  <div class="tab" data-page="services">🛠 Services</div>
+  <div class="tab" data-page="friends">👥️ Friends</div>
+  <div class="tab" data-page="work">️💰 Work</div>
+  <div class="tab" data-page="profile">👤 Profile</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
